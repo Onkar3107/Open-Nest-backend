@@ -17,8 +17,11 @@ app.use(
   cors({
     origin: process.env.CLIENT_URL,
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   })
 );
+app.options("*", cors());
+
 app.use(helmet());
 app.use(morgan("dev"));
 
