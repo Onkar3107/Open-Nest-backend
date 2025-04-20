@@ -21,7 +21,7 @@ router.get(
       "GitHub login successful",
       req.user.email || req.user.login
     );
-    res.status(200).json(new ApiResponse(200, "Login successful", req.user));
+    res.redirect("https://illuminati-sgu-hackathon-ig7o.vercel.app/login");
   }
 );
 
