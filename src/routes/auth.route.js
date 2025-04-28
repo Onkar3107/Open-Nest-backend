@@ -21,7 +21,7 @@ router.get(
       "GitHub login successful",
       req.user.email || req.user.login
     );
-    res.redirect("https://illuminati-sgu-hackathon-ig7o.vercel.app/login");
+    res.redirect("https://open-nest.vercel.app/login");
   }
 );
 
